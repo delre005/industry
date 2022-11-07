@@ -1,0 +1,968 @@
+.wrapper {
+  max-width: 100%;
+  font-family: industry, sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+
+
+.title {
+  font-size: 170px;
+  color: white;
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+  animation-duration: 1s;
+  animation-name: moveDown;
+  animation-delay: 2s;
+
+}
+
+
+.specimen {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-family: 'Industry';
+  font-style: italic;
+  color: #0075FF;
+  font-weight: 700;
+  font-size: 64px;
+  margin-top: 200px;
+  margin-bottom: 75px;
+
+}
+
+
+
+
+.marquee {
+  height: 90px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  width: 200%;
+  height: 90px;
+
+  position: absolute;
+  overflow: hidden;
+}
+.marquee span {
+  float: left;
+  width: 50%;
+  color: white;
+  font-size: 65px;
+}
+
+
+@media screen and (max-width: 1450px) {
+  .marquee span {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .marquee span {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .marquee span {
+    font-size: 22px;
+  }
+}
+
+
+div.scroll-left {
+  animation: marquee-left 10s linear infinite;
+}
+div.scroll-right {
+  animation: marquee-right 10s linear infinite;
+}
+@keyframes marquee-left {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@keyframes marquee-right {
+  0% { right: 0; }
+  100% { right: -100%; }
+}
+
+
+
+
+
+
+
+#mainMenu {
+  left: 25%;
+	width: 800px;
+  height: 50px;
+	font-family: sans-serif;
+  margin: auto;
+
+}
+
+#mainMenu li {
+	/* display: block; */
+	width: 200px;
+  height: 50px;
+	float:left;
+  font-family: 'Industry';
+}
+
+#mainMenu a {
+  height: 50px;
+  display:block;
+	padding:3px;
+  text-align: center;
+  text-decoration:none;
+  font-size: 20px;
+	background-color:#fff;
+	color:#009;
+  line-height: 50px;
+}
+
+#mainMenu a:hover {
+	background-color:#009;
+	color:#0075FF;
+}
+
+.details {
+  height: 66px;
+  margin-left: 295px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: block;
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #0075FF;
+
+}
+
+.info {
+  color: white;
+  display: block;
+  width: 420px;
+  height: 735px;
+  margin-left: 295px;
+  top: 550px;
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+
+
+
+
+
+@keyframes moveDown {
+from {
+    transform: translateY(-300px);
+  }
+
+  to {
+    transform: translateY(0px);
+
+}
+}
+
+.body-copy {
+  width: 521px;
+  height: 158px;
+  display: block;
+  margin-left: 150px;
+  margin-top: 200px;
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #0075FF;
+}
+
+.body-copy-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2.5fr;
+  grid-template-rows: auto;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.body-copy-container p {
+  padding: 20px;
+}
+
+.body-copy-one {
+
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 138%;
+  color: #FFFFFF;
+}
+
+.body-copy-two {
+
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 250;
+  font-size: 27px;
+  line-height: 59px;
+  color: #FFFFFF;
+
+}
+
+.body-copy-three {
+
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 47px;
+  color: #FFFFFF;
+}
+
+
+.display {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 300px;
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #0075FF;
+}
+
+
+.lexi {
+  margin-top: 100px;
+  margin-left: 219.78px;
+  display: block;
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 180px;
+
+  color: rgba(0, 117, 255, 0.7);
+
+  transform: rotate(5.67deg);
+}
+
+.flex {
+  margin-left: 230px;
+  margin-top: 200px;
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 250;
+  font-size: 200px;
+  color: rgba(0, 117, 255, 0.7);
+
+  transform: rotate(-10.35deg);
+}
+
+.spark {
+  width: 1055px;
+  height: 180px;
+  margin-top: 250px;
+  margin-left: 232.26px;
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 200;
+  font-size: 165px;
+  color: rgba(0, 117, 255, 0.7);
+
+  transform: rotate(10.32deg);
+}
+
+.comp {
+  width: 1129px;
+  height: 180px;
+  margin-left: 250px;
+  margin-top: 250px;
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 180px;
+  color: rgba(0, 117, 255, 0.7);
+
+  transform: rotate(-13.4deg);
+}
+
+.steno{
+  width: 1090px;
+  height: 350px;
+  margin-left: 179.67px;
+  margin-top: 250px;
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 180px;
+  color: rgba(0, 117, 255, 0.7);
+
+  transform: rotate(13.38deg);
+}
+
+.experiments {
+    margin: auto;
+    margin-top: 250px;
+    text-align: center;
+    width: 50%;
+    font-family: 'Industry';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: #0075FF;
+}
+
+
+.experiment-one {
+  margin-left: auto;
+  margin-top: 100px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+.item {
+  background-color: black;
+  font-size: 90px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 5px;
+}
+
+
+.one-a-1{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 900;
+}
+.one-a-2{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 800;
+}
+.one-a-3{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+}
+.one-a-4{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 600;
+}
+.one-a-5{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 500;
+}
+.one-a-6{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 400;
+}
+.one-a-7{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 300;
+}
+.one-a-8{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 200;
+}
+
+
+
+
+
+.one-b-1{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 200;
+}
+.one-b-2{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 900;
+}
+.one-b-3{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 800;
+}
+.one-b-4{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+}
+.one-b-5{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 600;
+}
+.one-b-6{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 500;
+}
+.one-b-7{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 400;
+}
+.one-b-8{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+
+.one-c-1{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 300;
+}
+.one-c-2{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 200;
+}
+.one-c-3{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 900;
+}
+.one-c-4{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 800;
+}
+.one-c-5{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+}
+.one-c-6{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 600;
+}
+.one-c-7{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 500;
+}
+.one-c-8{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+
+.one-d-1{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 400;
+}
+.one-d-2{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 300;
+}
+.one-d-3{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 200;
+}
+.one-d-4{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 900;
+}
+.one-d-5{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 800;
+}
+.one-d-6{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+}
+.one-d-7{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 600;
+}
+.one-d-8{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+
+.one-e-1{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 500;
+}
+.one-e-2{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 400;
+}
+.one-e-3{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 300;
+}
+.one-e-4{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 200;
+}
+.one-e-5{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 900;
+}
+.one-e-6{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 800;
+}
+.one-e-7{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+}
+.one-e-8{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 600;
+}
+
+
+
+.one-f-1{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 600;
+}
+.one-f-2{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 500;
+}
+.one-f-3{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 400;
+}
+.one-f-4{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 300;
+}
+.one-f-5{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 200;
+}
+.one-f-6{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 900;
+}
+.one-f-7{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 800;
+}
+.one-f-8{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+}
+
+
+
+
+.one-g-1{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+}
+.one-g-2{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 600;
+}
+.one-g-3{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 500;
+}
+.one-g-4{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 400;
+}
+.one-g-5{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 300;
+}
+.one-g-6{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 200;
+}
+.one-g-7{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 900;
+}
+.one-g-8{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 800;
+}
+
+
+
+.one-h-1{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 800;
+}
+.one-h-2{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 700;
+}
+.one-h-3{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 600;
+}
+.one-h-4{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 500;
+}
+.one-h-5{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 400;
+}
+.one-h-6{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 300;
+}
+.one-h-7{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 200;
+}
+.one-h-8{
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 900;
+}
+
+
+
+
+.experiment-two {
+  margin-left: auto;
+  margin-top: 300px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+}
+
+.content {
+  background-color: black;
+  font-size: 65px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 5px;
+}
+
+.two-a-1 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 200;
+}
+.two-a-2 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 300;
+}
+.two-a-3 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 400;
+}
+.two-a-4 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 500;
+}
+.two-a-5 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 600;
+}
+.two-a-6 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 700;
+}
+.two-a-7 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 800;
+}
+.two-a-8 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 900;
+}
+
+
+
+.two-a-9 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 900;
+}
+.two-a-10 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 800;
+}
+.two-a-11 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 700;
+}
+.two-a-12 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 600;
+}
+.two-a-13 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 500;
+}
+.two-a-14 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 400;
+}
+.two-a-15 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 300;
+}
+.two-a-16 {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 200;
+}
+
+
+
+
+
+.experiment-three {
+  margin-top: 300px;
+}
+
+.main-one {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px;
+  transform: rotate(10deg);
+}
+
+.main-two {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px;
+}
+.main-three {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px;
+  transform: rotate(10deg);
+
+}
+
+.main-four {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px;
+}
+
+.one {
+  background-color: black;
+  font-size: 90px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 5px;
+
+}
+
+.two {
+  background-color: black;
+  font-size: 90px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 5px;
+}
+
+.three-a-1 {
+  font-family: 'Industry';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 150px;
+}
+.three-a-2 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 130px;
+}
+.three-a-3 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 110px;
+}
+.three-a-4 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 90px;
+}
+.three-a-5 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 70px;
+}
+.three-a-6 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 50px;
+}
+.three-a-7 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-size: 30px;
+  font-style: italic;
+}
+.three-a-8 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 10px;
+}
+
+
+
+.three-b-1 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 10px;
+}
+.three-b-2 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 30px;
+}
+.three-b-3 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 50px;
+}
+.three-b-4 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 70px;
+}
+.three-b-5 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 90px;
+}
+.three-b-6 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 110px;
+}
+.three-b-7 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 130px;
+}
+.three-b-8 {
+  font-family: 'Industry';
+  font-weight: 900;
+  font-style: italic;
+  font-size: 150px;
+}
